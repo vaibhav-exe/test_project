@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= BASIC SEO ================= -->
+    <meta charset="UTF-8">
+    <title>Vaibhav Gupta | Full Stack, Data & AI Engineer</title>
+    <meta name="description" content="Vaibhav Gupta – Full Stack, Data & AI Engineer specializing in Python, SQL, Power BI, Machine Learning, and scalable software systems.">
+    <meta name="keywords" content="Full Stack Developer, Data Engineer, AI Engineer, Python Developer, Machine Learning, SQL, Power BI">
+    <meta name="author" content="Vaibhav Gupta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= JSON-LD STRUCTURED DATA ================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vaibhav Gupta",
+      "jobTitle": "Full Stack, Data & AI Engineer",
+      "email": "mailto:vaibhavgupta9327@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lucknow",
+        "addressCountry": "IN"
+      },
+      "url": "https://github.com/vaibhav-exe",
+      "sameAs": [
+        "https://www.linkedin.com/in/vaibhav-gupta0000/",
+        "https://github.com/vaibhav-exe"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Kalinga Institute of Industrial Technology"
+      },
+      "knowsAbout": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Power BI",
+        "Full Stack Development",
+        "Angular",
+        "ASP.NET",
+        "Data Analytics"
+      ]
+    }
+    </script>
+
+    <!-- ================= FONT ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ================= WARM PROFESSIONAL COLOR SYSTEM ================= */
+        :root {
+            --bg: #f4f1ec;          /* warm ivory */
+            --bg-soft: #efeae3;
+            --card: #faf7f2;        /* cream */
+            --text: #2b2a28;        /* warm charcoal */
+            --muted: #6b665f;       /* warm gray */
+            --accent: #c26a2e;      /* muted amber / terracotta */
+            --accent-soft: rgba(194, 106, 46, 0.14);
+            --border: #e0d9cf;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, sans-serif;
+            background: linear-gradient(180deg, var(--bg), var(--bg-soft));
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 72px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 72px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            max-width: 760px;
+            margin: 14px auto;
+            color: var(--muted);
+        }
+
+        header a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+        section {
+            margin-bottom: 72px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 22px;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 44px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+            border-radius: 8px;
+        }
+
+        article {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 24px;
+            margin-bottom: 24px;
+            border-radius: 14px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        article:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 26px rgba(43, 42, 40, 0.12);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 6px 12px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        /* ================= SCROLL ANIMATION ================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================= PRINT / ATS MODE ================= */
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+            }
+
+            main {
+                padding: 0;
+                max-width: 100%;
+            }
+
+            article {
+                border: none;
+                background: none;
+                padding: 0;
+                margin-bottom: 18px;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            .skill {
+                background: none;
+                border: 1px solid #000;
+                color: #000;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+
+    <header class="reveal">
+        <h1>Vaibhav Gupta</h1>
+        <p>
+            Full Stack, Data & AI Engineer specializing in Python, SQL, Machine Learning,
+            analytics systems, and scalable software solutions.
+        </p>
+        <p>
+            <a href="mailto:vaibhavgupta9327@gmail.com">vaibhavgupta9327@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/vaibhav-gupta0000/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/vaibhav-exe" target="_blank">GitHub</a>
+        </p>
+    </header>
+
+    <section class="reveal">
+        <h2>Professional Summary</h2>
+        <article>
+            Results-oriented technology professional with experience in Full Stack
+            Development, Data Analytics, and AI-driven automation. Proven ability to
+            leverage Python, SQL, Power BI, and Machine Learning to deliver scalable
+            applications and business insights.
+        </article>
+    </section>
+
+    <section class="reveal">
+        <h2>Technical Skills</h2>
+        <article class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">SQL / MySQL</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">C#</span>
+            <span class="skill">HTML / CSS</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">Excel</span>
+            <span class="skill">Angular</span>
+            <span class="skill">ASP.NET</span>
+            <span class="skill">Machine Learning</span>
+        </article>
+    </section>
+
+    <section class="reveal">
+        <h2>Professional Experience</h2>
+
+        <article>
+            <strong>Analyst — HCLTech</strong><br>
+            <em>Jan 2024 – Present | Lucknow, India</em>
+            <ul>
+                <li>Designed and maintained Power BI dashboards for executive reporting.</li>
+                <li>Analyzed technical trends to identify system inefficiencies.</li>
+                <li>Collaborated with engineering teams to translate insights into action.</li>
+            </ul>
+        </article>
+
+        <article>
+            <strong>Data Science & Analytics Intern — The Spark Foundation</strong><br>
+            <em>May 2023 – Jun 2023 | Remote</em>
+            <ul>
+                <li>Automated data preprocessing workflows using Python.</li>
+                <li>Performed EDA and data cleaning with Pandas.</li>
+                <li>Worked on Angular and ASP.NET full stack components.</li>
+            </ul>
+        </article>
+
+        <article>
+            <strong>Developer Intern — HighRadius</strong><br>
+            <em>Jan 2022 – Apr 2022 | Bhubaneswar, India</em>
+            <ul>
+                <li>Contributed to a Fintech B2B Cloud Platform.</li>
+                <li>Developed and optimized Machine Learning models.</li>
+                <li>Worked in Agile teams on testing and documentation.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="reveal">
+        <h2>Education & Academic Projects</h2>
+
+        <article>
+            <strong>B.Tech – Computer Science & System Engineering</strong><br>
+            Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar<br>
+            <em>2019 – 2023</em>
+        </article>
+
+        <article>
+            <strong>Housing Price Prediction</strong>
+            <p>Built a regression model using Python and Scikit-learn to predict real estate prices.</p>
+        </article>
+
+        <article>
+            <strong>Virtual AI Painter</strong>
+            <p>Developed a real-time computer vision application using OpenCV for digital drawing.</p>
+        </article>
+    </section>
+
+    <footer class="reveal">
+        © 2026 Vaibhav Gupta — Full Stack · Data · AI Engineer
+    </footer>
+
+</main>
+
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
