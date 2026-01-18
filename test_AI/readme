@@ -1,0 +1,21 @@
+C = create
+R = read
+U = update
+D = delete
+
+project1: To-Do web app
+
+1. create function
+2. list/read function
+3. update function
+4. delete function
+5. view function
+
+difining all the routings
+create,list_page,update,delete,view
+
+defining all the templates
+to_do_create.html
+to_do_list.html
+to_do_view.html
+to_do_update.html

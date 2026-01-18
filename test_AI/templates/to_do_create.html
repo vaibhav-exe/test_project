@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Create To-Do{% endblock %}
+
+{% block content %}
+<h2>✨ Create a New Task</h2>
+
+<form method="post">
+    {% csrf_token %}
+
+    <label>Task Title</label>
+    <input type="text" name="title" placeholder="e.g. Buy groceries" required>
+
+    <br><br>
+
+    <label>Description</label>
+    <textarea name="description" rows="4" placeholder="Optional details..."></textarea>
+
+    <br><br>
+
+    <button type="submit">Save Task</button>
+</form>
+{% endblock %}

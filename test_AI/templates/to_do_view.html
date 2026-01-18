@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}View Task{% endblock %}
+
+{% block content %}
+<h2>🔍 Task Details</h2>
+
+<p><strong>Title:</strong> Learn Django</p>
+<p><strong>Description:</strong> Build a fully functional To-Do app.</p>
+<p><strong>Status:</strong> 🟡 Pending</p>
+
+<a href="{% url 'to_do_update' %}">
+    <button>Edit Task</button>
+</a>
+{% endblock %}

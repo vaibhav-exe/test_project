@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}To-Do List{% endblock %}
+
+{% block content %}
+<h2>📋 Your Tasks</h2>
+
+<!-- Pending Task -->
+<div class="todo-card pending">
+    <div>
+        <input type="checkbox">
+        <strong>Learn Django</strong><br>
+        <small>Build a To-Do app</small>
+    </div>
+    <div>
+        <a href="{% url 'to_do_view' %}">👀</a>
+        <a href="{% url 'to_do_update' %}">✏️</a>
+    </div>
+</div>
+
+<!-- Completed Task -->
+<div class="todo-card done">
+    <div>
+        <input type="checkbox" checked>
+        <strong>Workout</strong><br>
+        <small>30 mins cardio</small>
+    </div>
+    <div>
+        <a href="{% url 'to_do_view' %}">👀</a>
+        <a href="{% url 'to_do_update' %}">✏️</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}To-Do App{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            color: #333;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        header {
+            background: white;
+            padding: 15px 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+            animation: slideUp 0.5s ease-out;
+        }
+
+        /* Todo Card */
+        .todo-card {
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .todo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Status colors */
+        .pending {
+            background: #fff7e6;
+            border-left: 6px solid #ff9800;
+        }
+
+        .done {
+            background: #e8f7ef;
+            border-left: 6px solid #4caf50;
+            opacity: 0.85;
+            text-decoration: line-through;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.3);
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="{% url 'index' %}">🏠 Home</a>
+        <a href="{% url 'to_do_create' %}">➕ Create</a>
+        <a href="{% url 'to_do_list' %}">📋 List</a>
+    </nav>
+</header>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+<script>
+    document.addEventListener("change", function (e) {
+        if (e.target.type === "checkbox") {
+            const card = e.target.closest(".todo-card");
+            card.classList.toggle("done");
+            card.classList.toggle("pending");
+        }
+    });
+</script>
+
+</body>
+</html>

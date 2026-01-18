@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Update To-Do{% endblock %}
+
+{% block content %}
+<h2>✏️ Update Task</h2>
+
+<form method="post">
+    {% csrf_token %}
+
+    <label>Task Title</label>
+    <input type="text" name="title" value="Learn Django" required>
+
+    <br><br>
+
+    <label>Description</label>
+    <textarea name="description" rows="4">Build a fully functional To-Do app.</textarea>
+
+    <br><br>
+
+    <button type="submit">Update Task</button>
+</form>
+{% endblock %}
